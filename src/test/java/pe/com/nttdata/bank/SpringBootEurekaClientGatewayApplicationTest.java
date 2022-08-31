@@ -1,6 +1,6 @@
 /**
  * Resumen.
- * Objeto                   : SpringBootEurekaClientGatewayApplication.java
+ * Objeto                   : SpringBootEurekaClientGatewayApplicationTest.java
  * Descripción              : Clase para iniciar el gateway.
  * Fecha de Creación        : 08/08/2022.
  * Proyecto de Creación     : Bootcamp-30.
@@ -12,22 +12,19 @@
  * Bootcamp-30              17/08/2022        Mario Vásquez           Realizar la creación de un método nuevo.
  */
 
-package pe.com.nttdata;
+package pe.com.nttdata.bank;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
 
 /**
  * Clase para iniciar el gateway.
  */
-@EnableEurekaClient
-@SpringBootApplication
-public class SpringBootEurekaClientGatewayApplication {
+@SpringBootTest
+class SpringBootEurekaClientGatewayApplicationTest {
 
-	public static void main(String[] args) {
-
-		SpringApplication.run(SpringBootEurekaClientGatewayApplication.class, args);
+	@Test
+	void contextLoads() {
 	}
 
 }
